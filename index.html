@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de textos - Challenge 1</title>
+    <link id="estilo" rel="stylesheet" href="./styleAlura.css">
+        
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/Vector.svg" onclick="alteraTema()">
+    </div>
+    <div class="principal">
+        <section class="lado__esquerdo">
+            <textarea id="texto_inicial" class="container__input" placeholder="Digite seu texto"></textarea>
+            <p id="informacao"><img src="assets/bi_exclamation-circle-fill.svg">&nbsp;Utilize somente letras minúsculas, sem acentos </p>
+            <div class="container__botoes">
+                <button onclick="criptografar()" class="container__botao" id="cripto">Criptografar</button>
+                <button onclick="descriptografar()" class="container__botao" id="decripto">Descriptografar</button>
+                
+            </div >
+        </section>
+        
+        <div class="container__output">
+            <div class ="desenho">
+                <img id='svgFeio' src="assets/High quality products 1 1.svg">
+            </div>
+            <div class="texto__output">
+                <p id="resultado">Nenhuma mensagem encontrada</p>
+                <p id="observacao">Digite um texto que você deseja criptografar ou descriptografar</p2>
+            </div>
+            <div class="botao__copiar">
+                <button id="botaoCopia" style="display: none" onclick="copiar()" class="container__botao botao__copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+        <script src="app.js" defer></script>
+</body>
+</html>
+
