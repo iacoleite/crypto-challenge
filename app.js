@@ -72,7 +72,7 @@ function descriptografar() {
     }
 }
 
-// 
+// copy output
 function copiar() {
     let copyText = document.getElementById('resultado');
     navigator.clipboard.writeText(copyText.textContent);
