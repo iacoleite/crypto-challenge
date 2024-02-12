@@ -53,7 +53,7 @@ function criptografar() {
     document.getElementById("observacao").style.display = "none";
     exibirTextoNaTela('resultado', novaMensagem);
     eraseInput();
-    document.getElementById("botaoCopia").style.display = "inline";
+    document.getElementById("botaoCopia").style.display = "flex";
     }
 }
 

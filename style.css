@@ -59,21 +59,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50 px;
 }
+
 .container__botoes {
     display: flex;
     flex-direction: row;
     column-gap: 5%;
-    justify-content: space-evenly;
     padding: 2%;
 }
 
 .container__botao {
     display: flex;
-    width: 16rem;
-    padding: 4.5%;
+    width: 24vw;
+    padding: 2.5%;
     flex-shrink: 1;
+    align-items: center;
     border-radius: 24px;
     font-size: 1.25rem;
     font-style: normal;
@@ -104,22 +104,20 @@ body {
 
 
 .container__output {
-    width: 400px;
-    height: 710px;
-    padding: 5px; 
-    margin: 10px;
-    border-radius: 16px;
+    width: 35%;
+    height: 75vh;
+    border-radius: 24px;
     background: var(--cor-primaria);
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 48px */
     color: var(--cor-secundaria);
     border: 5px solid var(--cor-primaria);
     display: flex;
     flex-direction: column;
     text-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     
 }
@@ -128,7 +126,7 @@ body {
 
 .texto__output {
     display: flex;
-    text-wrap:wrap ;
+    text-wrap: wrap;
     flex-direction: column;
     word-break: break-word;
     text-align: left;
@@ -139,19 +137,17 @@ body {
     color: #495057
 }
 
-.botao__copiar {
+#botaoCopia {
     display: flex;
     justify-content: center;
-}
-
-#botaoCopia {
     background-color: var(--cor-primaria);
     border: #0A3871 2px solid;
+    min-height: 50px;
 }
 
 #botaoCopia:hover {
     background-color: var(--cor-secundaria);
-    color:var(--cor-primaria);
+    color: var(--cor-primaria);
     transition: 0.6s;
 }
 
