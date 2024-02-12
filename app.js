@@ -78,11 +78,11 @@ function copiar() {
     navigator.clipboard.writeText(copyText.textContent);
 }
 
-// changes theme alternating the current CSS file
+// change theme, toggle between CSS files
 function alteraTema() {
     linkcss = document.getElementById('estilo');
     if (linkcss.href.includes("style.css")) {
-        linkcss.href = "./styleAlura.css";
+        linkcss.href = "./styleCareca.css";
         document.getElementById('texto_inicial').placeholder = 'Você achou e não gostou do easterEgg do Careca! :(';
     } else { 
         linkcss.href = "style.css";

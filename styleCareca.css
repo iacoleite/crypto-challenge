@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap');
 
 :root {
-    --cor-primaria: #F3F5FC;
-    --cor-secundaria: #0A3871;
+    --cor-preto: #262524;
+    --cor-amarelo: #FFCE46;
+    --cor-verde: #4FBA2C;
+    --cor-branca: #FAEEF2;
+    --cor-azul: #74B6FF;
 }
 
 * {
@@ -18,7 +21,7 @@ body {
 
 .logo{
     background-color:var(--cor-primaria);
-    padding: 30px;
+    padding: 3%;
 }
 
 .principal {
