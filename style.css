@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,7 +13,6 @@ body {
 .principal {
     display: flex;
     border: 5px solid #4FBA2C;
-    
     align-items: center;
     justify-content: space-evenly;
     background: #262524;

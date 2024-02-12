@@ -1,27 +1,26 @@
-let mensagem = "";
+// set variables and 'dictionary' for cryptography
+let mensagem = '';
 let novaMensagem = '';
 let dicionario = {
-    "e": "enter",
-    "i": "imes",
-    "a": "ai",
-    "o": "ober",
-    "u": "ufat",
-};
+    'e': 'enter',
+    'i': 'imes',
+    'a': 'ai',
+    'o': 'ober',
+    'u': 'ufat'};
 
-
+// hide copy 'Copia' button
 function desapareceCopia() {
     let botao = document.getElementById('botaoCopia');
     botao.style.display = none;
 }
 
-
-// insere o texto na tag no HTML
+// Display text - insere o texto na tag no HTML
 function exibirTextoNaTela(tag, texto) {
     let campo = document.getElementById(tag);
     campo.textContent = texto;
 }
 
-/* pega a input do usuário no textArea */
+// get input from textArea 
 function getInput() {
     let texto = document.getElementById('texto_inicial');
     mensagem = texto.value;
@@ -29,13 +28,13 @@ function getInput() {
     
 }
 
-// Apaga campo input
+// clear input
 function eraseInput() {
     let texto = document.getElementById('texto_inicial');
     texto.value = '';
 }
 
-/* substitui caracteres com base no dicionario */ 
+// 'Crypto': replace chars using iteration of chars from input str and replace it using the 'dictionary' to build a new str  
 function criptografar() {
     novaMensagem = '';
     getInput();
@@ -49,45 +48,44 @@ function criptografar() {
             novaMensagem += letra;
         }
     }
-    document.getElementById("svgFeio").style.display = "none";
+    // display the new str in the output area, shows copy button and clear the input textArea
+    document.getElementById("svgPessoaLupa").style.display = "none";
     document.getElementById("observacao").style.display = "none";
     exibirTextoNaTela('resultado', novaMensagem);
     eraseInput();
-    document.getElementById("botaoCopia").style.display = "inline"
-    
+    document.getElementById("botaoCopia").style.display = "inline";
+    }
 }
-}
-// substitui caracteres com base no dicionario reverso
+
+// 'Decrypto': slice the input and replace a set of chars for the correspondent char from the 'dictionary' 
 function descriptografar() {
     getInput();
     if (mensagem == '') {
         return
     } else {
     novaMensagem = mensagem;
-    for (let i in dicionario) {
-        novaMensagem = novaMensagem.split(`${dicionario[i]}`).join(`${i}`);
-        console.log(i);
-        console.log(novaMensagem);
+        for (let i in dicionario) {
+            novaMensagem = novaMensagem.split(`${dicionario[i]}`).join(`${i}`);
+        }
+        exibirTextoNaTela('resultado', novaMensagem);
+        eraseInput();
     }
-    //novaMensagem = mensagem.split('ai').join('a').split('enter').join('e').split('imes').join('i').split('ober').join('o').split('ufat').join('u');
-    exibirTextoNaTela('resultado', novaMensagem);
-    eraseInput();
 }
-}
+
+// 
 function copiar() {
     let copyText = document.getElementById('resultado');
     navigator.clipboard.writeText(copyText.textContent);
-    
 }
 
+// changes theme alternating the current CSS file
 function alteraTema() {
     linkcss = document.getElementById('estilo');
-    console.log(linkcss);
     if (linkcss.href.includes("style.css")) {
         linkcss.href = "./styleAlura.css";
         document.getElementById('texto_inicial').placeholder = 'Você achou e não gostou do easterEgg do Careca! :(';
     } else { 
-        linkcss.href = "style.css"
+        linkcss.href = "style.css";
         document.getElementById('texto_inicial').placeholder = 'Você achou o easterEgg do Careca!';
     }
 }
