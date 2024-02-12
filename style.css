@@ -5,10 +5,12 @@
     
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     background-color: #262524; 
     height: 100dvh;
 }
+
 .principal {
     display: flex;
     border: 5px solid #4FBA2C;
@@ -18,12 +20,13 @@ body {
     background: #262524;
     box-sizing: border-box;
     text-align: left;
-    
 }
+
 .logo{
     padding: 30px;
     margin: 0px
 }
+
 .lado__esquerdo {
     display: flex;
     flex-direction: column;
@@ -65,7 +68,6 @@ body {
     flex-shrink: 0;
     border-radius: 24px;
     background: #74B6FF;
-    
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -77,8 +79,6 @@ body {
     border-radius: 0px;
     transition: 0.2s;
 }
-
-
 
 .container__output {
     width: 400px;
@@ -97,11 +97,7 @@ body {
     flex-direction: column;
     text-wrap: wrap;
     justify-content: space-between;
-    
-    
 }
-
-
 
 .texto__output {
     display: flex;
@@ -109,10 +105,7 @@ body {
     flex-direction: column;
     word-break: break-word;
     text-align: left;
-    
-    
 }
-
 
 .botao__copiar {
     display: flex;
@@ -132,11 +125,13 @@ body {
         width: auto;
         border: 0;
     }
+
     .lado__esquerdo{
         width: auto;
         align-items: start;
         padding: 0;
     }
+
     .container__botoes {
         flex-direction: row;
         margin: 0;
@@ -144,11 +139,13 @@ body {
         border: 0;
         gap: 6px;
     }
+
     .container__botao {
         margin: 0;
         width: fill;
         height: hug;
     }
+
     .container__input {
         margin: 0;
         padding: 0;
@@ -166,15 +163,19 @@ body {
         padding: 10%;
         width: auto;
     }
+
     .desenho {
         display: none;
     }
+
     #observacao {
         text-wrap: wrap;
     }
+
     .lado__esquerdo{
         width: auto;   
     }
+
     .logo{
         padding: 5px;
     }
@@ -188,11 +189,13 @@ body {
         border: 0;
         gap: 20px;
     }
+
     .lado__esquerdo{
         width: auto;
         align-items: center;
         padding: 0;
     }
+
     .container__botoes {
         flex-direction: column;
         margin: 0;
@@ -200,11 +203,13 @@ body {
         border: 0;
         gap: 6px;
     }
+
     .container__botao {
         margin: 0;
         width: fill;
         height: hug;
     }
+
     .container__input {
         margin: 0;
         padding: 0;
@@ -222,15 +227,19 @@ body {
         padding: 10%;
         width: auto;
     }
+
     .desenho {
         display: none;
     }
+
     #observacao {
         text-wrap: wrap;
     }
+
     .lado__esquerdo{
         width: auto;   
     }
+
     .logo{
         padding: 5px;
     }
