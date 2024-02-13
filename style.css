@@ -55,6 +55,24 @@ body {
     color:var(--cor-secundaria);
 }
 
+.container__output {
+    width: 35%;
+    height: 75vh;
+    border-radius: 24px;
+    background: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    border: 5px solid var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
 #informacao {
     display: flex;
     justify-content: center;
@@ -65,12 +83,13 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 5%;
-    padding: 2%;
+    padding: 3%;
 }
 
 .container__botao {
     display: flex;
     width: 24vw;
+    min-width: 24vw;
     padding: 2.5%;
     flex-shrink: 1;
     align-items: center;
@@ -101,28 +120,6 @@ body {
     color: var(--cor-primaria);
     transition: 0.6s;
 }
-
-
-.container__output {
-    width: 35%;
-    height: 75vh;
-    border-radius: 24px;
-    background: var(--cor-primaria);
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--cor-secundaria);
-    border: 5px solid var(--cor-primaria);
-    display: flex;
-    flex-direction: column;
-    text-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    
-}
-
-
 
 .texto__output {
     display: flex;
@@ -183,12 +180,14 @@ body {
         padding: 0;
         border: 0;
         gap: 6px;
+        
     }
 
     .container__botao {
         margin: 0;
         width: fill;
         height: hug;
+        
     }
 
     .container__input {
@@ -230,13 +229,13 @@ body {
     .principal {
         flex-direction: column;
         padding: 0%;
-        width: auto;
+        width: 100vw;
         border: 0;
-        gap: 20px;
+        gap: 10%;
     }
 
     .lado__esquerdo{
-        width: auto;
+        width: 100vw;
         align-items: center;
         padding: 0;
     }
@@ -251,8 +250,8 @@ body {
 
     .container__botao {
         margin: 0;
-        width: fill;
-        height: hug;
+        width: 80vw; 
+        height: 15vw;
     }
 
     .container__input {
@@ -260,7 +259,7 @@ body {
         padding: 0;
         border: 0;
         width: auto;
-        height: 400px;
+        height: 35vh;
         justify-content: left;
     }
 
@@ -270,7 +269,7 @@ body {
         border: 0;
         height: auto;
         padding: 10%;
-        width: auto;
+        width: 80vw;
     }
 
     .desenho {
@@ -282,7 +281,7 @@ body {
     }
 
     .lado__esquerdo{
-        width: auto;   
+        width: 100vw;   
     }
 
     .logo{
