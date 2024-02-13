@@ -104,6 +104,45 @@ body {
     border: var(--cor-secundaria) solid 2px;
 }
 
+
+
+.texto__output {
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: column;
+    word-break: break-word;
+    text-align: left;
+    width: 90%;
+}
+
+#resultado {
+    text-align: left;
+    color: #495057;
+    padding: 2%
+}
+
+#sem_mensagem {
+    text-align: center;
+    color: #495057
+}
+#desenho {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+#svgPessoaLupa {
+
+    width: 95%;
+    height:95%;
+    padding: auto;
+}
+
+#observacao {
+    font-size: 1rem;
+    color: #495057;
+    text-align: center;
+}
+
 #cripto {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
@@ -138,42 +177,6 @@ body {
     transition: 0.6s;
 }
 
-.texto__output {
-    display: flex;
-    text-wrap: wrap;
-    flex-direction: column;
-    word-break: break-word;
-    text-align: left;
-}
-
-#resultado {
-    text-align: left;
-    color: #495057;
-    padding: 2%
-}
-
-#sem_mensagem {
-    text-align: center;
-    color: #495057
-}
-#desenho{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-}
-#svgPessoaLupa {
-
-    width: 95%;
-    height:95%;
-    padding: auto;
-}
-
-#observacao {
-    font-size: 1rem;
-    color: #495057;
-    text-align: center;
-}
-
 @media only screen and (max-width: 768px) and (min-width: 376px) {
     .principal {
         flex-direction: column;
@@ -182,13 +185,13 @@ body {
         border: 0;
         justify-content: space-between;
         height: 80dvh;
+        
     }
 
     .lado__esquerdo{
         width: 75vw;
         height: auto;
         max-height: 65%;
-        align-items: start;
         padding: 0;
         
         
