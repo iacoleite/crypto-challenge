@@ -84,9 +84,9 @@ function alteraTema() {
     linkcss = document.getElementById('estilo');
     if (linkcss.href.includes("style.css")) {
         linkcss.href = "./styleCareca.css";
-        document.getElementById('texto_inicial').placeholder = 'Você achou e não gostou do easterEgg do Careca! :(';
+        document.getElementById('texto_inicial').placeholder = 'Você achou o Easter Egg do Caio!';
     } else { 
         linkcss.href = "style.css";
-        document.getElementById('texto_inicial').placeholder = 'Você achou o easterEgg do Careca!';
+        document.getElementById('texto_inicial').placeholder = 'Você achou e não gostou do Easter Egg do Caio! :(';
     }
 }
