@@ -8,9 +8,9 @@
         
 </head>
 <body>
-    <div class="logo">
+    <header class="logo">
         <img src="assets/Vector.svg" onclick="alteraTema()">
-    </div>
+    </header>
     <div class="principal">
         <section class="lado__esquerdo">
             <textarea id="texto_inicial" class="container__input" placeholder="Digite seu texto"></textarea>
@@ -22,11 +22,14 @@
         </section>
 
         <section class="container__output">
-            <div class ="desenho">
+            <div class="texto__output" >
+                <p id="resultado" style="display: none" >Nenhuma mensagem encontrada</p>
+            </div>
+            <div id="desenho">
                 <img id='svgPessoaLupa' src="assets/High quality products 1 1.svg">
             </div>
-            <div class="texto__output">
-                <p id="resultado">Nenhuma mensagem encontrada</p>
+            <div id="mensagem__inicial" class="texto__output">
+                <p id="sem_mensagem">Nenhuma mensagem encontrada</p>
                 <p id="observacao">Digite um texto que você deseja criptografar ou descriptografar</p2>
             </div>
             <div class="container__botoes">

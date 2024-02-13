@@ -50,7 +50,8 @@ function criptografar() {
     }
     // display the new str in the output area, shows copy button and clear the input textArea
     document.getElementById("svgPessoaLupa").style.display = "none";
-    document.getElementById("observacao").style.display = "none";
+    document.getElementById("mensagem__inicial").style.display = "none";
+    document.getElementById("resultado").style.display = "flex";
     exibirTextoNaTela('resultado', novaMensagem);
     eraseInput();
     document.getElementById("botaoCopia").style.display = "flex";
