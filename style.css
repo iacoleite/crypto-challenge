@@ -205,7 +205,7 @@ body {
         margin: 0%;
         padding: 0;
         border: 0;
-        height: 80vh;
+        height: auto;
         padding: 10%;
         width: 75vw;
     }
@@ -282,9 +282,7 @@ body {
         text-wrap: wrap;
     }
 
-    .lado__esquerdo{
-        width: 95vw;   
-    }
+
 
     .logo{
         padding: 2%;
