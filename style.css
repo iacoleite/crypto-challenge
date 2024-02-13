@@ -164,14 +164,15 @@ body {
     .principal {
         flex-direction: column;
         padding: 0%;
-        width: auto;
+        width: 100vw;
         border: 0;
     }
 
     .lado__esquerdo{
-        width: auto;
+        width: 75vw;
         align-items: start;
         padding: 0;
+        
     }
 
     .container__botoes {
@@ -185,17 +186,16 @@ body {
 
     .container__botao {
         margin: 0;
-        width: fill;
-        height: hug;
-        
+        width: 45vw; 
+        height: 15vw;
     }
 
     .container__input {
         margin: 0;
         padding: 0;
         border: 0;
-        width: auto;
-        height: 400px;
+        width: 75vw;
+        height: 35vh;
         justify-content: left;
     }
 
@@ -205,7 +205,7 @@ body {
         border: 0;
         height: auto;
         padding: 10%;
-        width: auto;
+        width: 75vw;
     }
 
     .desenho {
@@ -235,7 +235,7 @@ body {
     }
 
     .lado__esquerdo{
-        width: 100vw;
+        width: 75vw;
         align-items: center;
         padding: 0;
     }
@@ -258,7 +258,7 @@ body {
         margin: 0;
         padding: 0;
         border: 0;
-        width: auto;
+        width: 90vw;
         height: 35vh;
         justify-content: left;
     }
@@ -281,10 +281,10 @@ body {
     }
 
     .lado__esquerdo{
-        width: 100vw;   
+        width: 95vw;   
     }
 
     .logo{
-        padding: 5px;
+        padding: 2%;
     }
 }
