@@ -186,6 +186,7 @@ body {
         align-items: start;
         padding: 0;
         
+        
     }
 
     .container__botoes {
@@ -208,7 +209,7 @@ body {
         padding: 0;
         border: 0;
         width: 75vw;
-        height: 35vh;
+        height: 100%;
         justify-content: left;
     }
 
