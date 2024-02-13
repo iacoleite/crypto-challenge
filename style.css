@@ -21,6 +21,7 @@ body {
 .logo {
     background-color:var(--cor-primaria);
     padding: 2%;
+    height: 6vh;
 }
 
 .principal {
@@ -146,7 +147,7 @@ body {
 }
 
 #resultado {
-    text-align: justify;
+    text-align: left;
     color: #495057;
     padding: 2%
 }
@@ -179,10 +180,14 @@ body {
         padding: 0%;
         width: 100vw;
         border: 0;
+        justify-content: space-between;
+        height: 80dvh;
     }
 
     .lado__esquerdo{
         width: 75vw;
+        height: auto;
+        max-height: 65%;
         align-items: start;
         padding: 0;
         
@@ -208,8 +213,7 @@ body {
         margin: 0;
         padding: 0;
         border: 0;
-        width: 75vw;
-        height: 85%;
+        width: 100%;
         justify-content: left;
     }
 
@@ -245,13 +249,16 @@ body {
         padding: 0%;
         width: 100vw;
         border: 0;
-        
+        justify-content: space-between;
+        height: 80dvh;
     }
 
     .lado__esquerdo{
         width: 75vw;
         align-items: center;
         padding: 0;
+        height: auto;
+        max-height: 65%;
     }
 
     .container__botoes {
@@ -272,8 +279,8 @@ body {
         margin: 0;
         padding: 0;
         border: 0;
-        width: 90vw;
-        height: 75%;
+        width: 100%;
+        
         justify-content: left;
     }
 
