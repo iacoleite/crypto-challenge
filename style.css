@@ -80,6 +80,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .container__botoes {
@@ -101,7 +102,7 @@ body {
     font-style: normal;
     font-weight: 400;
     justify-content: center;
-    border: var(--cor-secundaria) solid 2px;
+    border: var(--cor-secundaria) solid 1px;
 }
 
 
@@ -150,6 +151,7 @@ body {
 
 #decripto {
     background: var(--cor-terciaria);
+    color: #495057;
     
 }
 #cripto:hover {
@@ -167,7 +169,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--cor-primaria);
-    border: #0A3871 2px solid;
+    border: #0A3871 1px solid;
     min-height: 70px;
 }
 
