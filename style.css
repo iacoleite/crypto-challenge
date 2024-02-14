@@ -87,13 +87,18 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     padding: 3%;
+    align-items: center;
+    justify-content: center;
 }
 
 .container__botao {
     display: flex;
     width: 24vw;
-    min-width: 24vw;
+    min-width: 20vw;
+    min-height: 6vw;
     padding: 2.5%;
     flex-shrink: 1;
     align-items: center;
@@ -124,7 +129,7 @@ body {
 
 #sem_mensagem {
     text-align: center;
-    color: #495057
+    color: #495057;
 }
 #desenho {
     height: 50%;
@@ -170,7 +175,7 @@ body {
     justify-content: center;
     background-color: var(--cor-primaria);
     border: #0A3871 1px solid;
-    min-height: 70px;
+    color: #495057;
 }
 
 #botaoCopia:hover {
