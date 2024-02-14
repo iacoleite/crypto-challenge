@@ -66,7 +66,7 @@ body {
     height: 100%;
     border-radius: 24px;
     background: var(--cor-quaternaria);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     color: var(--cor-secundaria);
@@ -135,7 +135,7 @@ body {
 
 #sem_mensagem {
     text-align: center;
-    color: #495057;
+    color: #343A40;
 }
 #desenho {
     height: 50%;
@@ -162,7 +162,7 @@ body {
 
 #decripto {
     background: var(--cor-terciaria);
-    color: #495057;
+    color: var(--cor-secundaria);
     
 }
 #botaoCopia {
@@ -170,7 +170,7 @@ body {
     justify-content: center;
     background-color: var(--cor-primaria);
     border: #0A3871 1px solid;
-    color: #495057;
+    color: var(--cor-secundaria);
 }
 
 @media (hover: hover){
