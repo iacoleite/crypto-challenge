@@ -20,12 +20,12 @@ function exibirTextoNaTela(tag, texto) {
     campo.textContent = texto;
 }
 
-// get input from textArea 
+// get input from textArea, lowercase it and remove any accents
 function getInput() {
     let texto = document.getElementById('texto_inicial');
-    mensagem = texto.value;
+    mensagem_suja = texto.value;
+    mensagem = mensagem_suja.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, '');
     return mensagem;
-    
 }
 
 // clear input
