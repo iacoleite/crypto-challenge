@@ -16,37 +16,38 @@
 body {
     background-color: var(--cor-primaria); 
     height: 85vh;
+    
 }
 
 .logo {
     background-color:var(--cor-primaria);
-    padding: 2%;
-    height: 6vh;
+    margin: 2%;
+
 }
 
 .principal {
     display: flex;
-    border: 5px solid var(--cor-primaria);
     align-items: center;
     justify-content: space-evenly;
     background: var(--cor-primaria);
-    box-sizing: border-box;
     text-align: left;
-    height: 100%;
+    height: 90%;
 }
 
 .lado__esquerdo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 100%;
+    justify-content: space-between;
+    
 }
 
 .container__input {
     display: flex;
     outline: none;
     width: 100%;
-    height: 63vh;
+    height: 80%;
     margin: 0px;
     padding: 5px; 
     background-color: var(--cor-primaria);
@@ -61,7 +62,7 @@ body {
 
 .container__output {
     width: 35%;
-    height: 95%;
+    height: 100%;
     border-radius: 24px;
     background: var(--cor-quaternaria);
     font-size: 1.5rem;
@@ -71,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     text-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
@@ -87,9 +88,7 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding: 3%;
+    padding: 3vh;
     align-items: center;
     justify-content: center;
 }
@@ -184,6 +183,18 @@ body {
     transition: 0.6s;
 }
 
+#barra__embaixo {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 1%;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 376px) {
     .principal {
         flex-direction: column;
@@ -191,14 +202,13 @@ body {
         width: 100vw;
         border: 0;
         justify-content: space-between;
-        height: 80dvh;
+        height: 85vh;
         
     }
 
     .lado__esquerdo{
         width: 75vw;
-        height: auto;
-        max-height: 65%;
+        height: 60%;
         padding: 0;
         align-self: center;
         
@@ -224,6 +234,7 @@ body {
         padding: 0;
         border: 0;
         width: 100%;
+        min-height: 40%;
         justify-content: left;
     }
 
@@ -231,9 +242,10 @@ body {
         margin: 0%;
         padding: 0;
         border: 0;
+        min-height: 40%;
         height: auto;
-        padding: 10%;
-        width: 75vw;
+        padding: 2%;
+        width: 90vw;
     }
 
     #desenho {
