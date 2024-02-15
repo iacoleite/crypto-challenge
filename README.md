@@ -24,3 +24,11 @@ Requisitos:
 
 O usuário tem a disposição um campo para inserção do texto a ser criptografado ou descriptografado e deve poder escolher entre as duas opções.
 O resultado é exibido na tela junto à um botão que copia o texto gerado.
+
+### Observações:
+- Foi implementado o tratamento da input do usuário, de modo que os caracteres maiúsculos e/ou acentuados sejam substituídos por suas versões minúsculas e sem acentos.
+- Para a função criptografar foi utilizado um algoritmo que faz a iteração dos caracteres e verifica se deve ou não ser substituído pela correspondente sequência, o caractere, substituído ou não, é então concatenado em uma string fazia, criando, assim, a versão criptografada da input.
+- Para a função descriptografar, foi implementada uma solução diversa, utilizando o método split para dividir e substituir as sequências de caracteres pelo caractere correspondente de acordo com o que foi proposto.
+
+<img src="https://github.com/iacoleite/crypto-challenge/assets/154355940/fe1c4492-afa6-4493-bb4e-e46ddca35d2f" width="250px">
+
