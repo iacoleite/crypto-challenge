@@ -20,7 +20,7 @@ function exibirTextoNaTela(tag, texto) {
     campo.textContent = texto;
 }
 
-// get input from textArea, lowercase it and remove any accents
+// get input from textArea, lowercase it, separate and remove any accents
 function getInput() {
     let texto = document.getElementById('texto_inicial');
     mensagem_suja = texto.value;
