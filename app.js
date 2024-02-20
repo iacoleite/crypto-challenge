@@ -60,6 +60,7 @@ function criptografar() {
 
 // 'Decrypto': slice the input and replace a set of chars for the correspondent char from the 'dictionary' 
 function descriptografar() {
+    novaMensagem = '';
     getInput();
     if (mensagem == '') {
         return
@@ -68,8 +69,12 @@ function descriptografar() {
         for (let i in dicionario) {
             novaMensagem = novaMensagem.split(`${dicionario[i]}`).join(`${i}`);
         }
+        document.getElementById("svgPessoaLupa").style.display = "none";
+        document.getElementById("mensagem__inicial").style.display = "none";
+        document.getElementById("resultado").style.display = "flex";
         exibirTextoNaTela('resultado', novaMensagem);
         eraseInput();
+        document.getElementById("botaoCopia").style.display = "flex";
     }
 }
 
